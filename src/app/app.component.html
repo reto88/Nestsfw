@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="image" fxFlex fxLayout="column" fxLayoutAlign="space-evenly skretch">
+  <!--  <h1 align="center" style="background-color: black; color: white">
+    SFW Info
+  </h1>-->
+  <div *ngIf="!isLoaded">
+    <div fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly center">
+      <mat-spinner></mat-spinner>
+      <p align="center">Wait for Data</p>
+    </div>
+  </div>
+  <div *ngIf="isLoaded">
+<div fxFlex fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly center">
+      <app-show-value *ngFor="let receivedValue of receivedValues" [numericIdObject]="receivedValue" [picture]="1"></app-show-value>
+    </div>
+  </div>  <!--  
+  <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+    <ng-container>
+      <app-show-value *ngFor="let receivedValue of receivedValues" [numericIdObject]="receivedValue" [picture]="1"></app-show-value>
+    </ng-container>
+  </div>-->
+
+</div>
+<router-outlet></router-outlet>

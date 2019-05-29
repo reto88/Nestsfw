@@ -1,0 +1,21 @@
+<mat-card >
+ 
+   <!-- <div mat-card-avatar [ngSwitch]="numericIdObject.picture">
+      <mat-icon *ngSwitchCase="1">spa</mat-icon>
+      <mat-icon *ngSwitchCase="2">ac_unit</mat-icon>
+      <mat-icon *ngSwitchDefault>home</mat-icon>
+    </div> -->
+    <mat-card-title>{{numericIdObject.name}}</mat-card-title>
+   
+
+
+  <mat-card-content>
+      <mat-card-subtitle>{{numericIdObject.description}}
+          <div class="livevalue">  {{numericIdObject.value}} {{numericIdObject.unit}}</div>
+          <div class="time">  {{numericIdObject.timestamp | date:'HH:mm'}}</div>
+          <div class="time">  {{numericIdObject.timestamp | date:'dd.MM.yyyy'}}</div>
+
+      </mat-card-subtitle>
+  </mat-card-content>
+</mat-card>
+

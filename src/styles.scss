@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Variable for all others
+
+
+html, 
+body {
+    height: 100%;
+    margin:0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index:2;
+  }
+  
+  /* for all components */
+  .content{
+    margin-top: 100px;
+    min-height:  100%;
+  }
+    
+  .footer {
+    position: fixed;
+    bottom: 10px;
+    left: 25%;
+    width: 75%;
+  }
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/theming';
+
+
+$custom-typography: mat-typography-config($font-family: '"Consolas", sans-serif;');
+@include mat-core($custom-typography);
+
+
+$color-card: #FF0000;
+$color-header: green;
+$color-font: white;
