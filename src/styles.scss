@@ -5,8 +5,10 @@
 
 html, 
 body {
+  color: #555555;
     height: 100%;
     margin:0;
+    line-height: 1.5;
 }
 .header{
     position: fixed;
@@ -33,7 +35,7 @@ body {
 @import '~@angular/material/theming';
 
 
-$custom-typography: mat-typography-config($font-family: '"Consolas", sans-serif;');
+$custom-typography: mat-typography-config($font-family: '"Helvetica", sans-serif;');
 @include mat-core($custom-typography);
 
 

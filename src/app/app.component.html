@@ -10,10 +10,11 @@
     </div>
   </div>
   <div *ngIf="isLoaded">
-<div fxFlex fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly center">
+    <div fxFlex fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly center">
       <app-show-value *ngFor="let receivedValue of receivedValues" [numericIdObject]="receivedValue" [picture]="1"></app-show-value>
     </div>
-  </div>  <!--  
+  </div>
+  <!--  
   <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
     <ng-container>
       <app-show-value *ngFor="let receivedValue of receivedValues" [numericIdObject]="receivedValue" [picture]="1"></app-show-value>

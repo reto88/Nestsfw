@@ -28,10 +28,10 @@ export class AppComponent implements OnInit, OnDestroy {
     picture: 2
   },
   {
-    numericId: "42110253",
+    numericId: "42110257",
     name: "SFW ",
-    description:"temperature ceiling",
-    unit: "°C",
+    description:"humidity",
+    unit: "%",
     picture: 2
   }];
   ngOnInit() {
